@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var arrayOfPositveQuotes = ["You are loved!","You are wanted!","You are amazing!", "You are beautiful!","You are the best version of you!","You are not alone!","You are safe!"]
+    @State var arrayOfPositveQuotes = ["You are loved!","You are wanted!","You are amazing!", "You are beautiful!","You are the best version of you!","You are not alone!","You are safe!","I can control how I react to others","My emotions have purpose and value","I trust myself and my feelings","I accept myself just the way I am","I feel safe and secure wherever I am","I am calm and content","I am allowed to say no and stand up to my negative thoughts",]
     @State var affiramation = "Today is gonna be an awesome day!"
     
     
@@ -41,7 +41,7 @@ struct ContentView: View {
                     
                 
                 Button("Tap Me!") {
-                    let randQuotes = Int.random(in: 0...6)
+                    let randQuotes = Int.random(in: 0...14)
                     
                     
                     affiramation = arrayOfPositveQuotes[randQuotes]
